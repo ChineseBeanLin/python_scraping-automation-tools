@@ -1,0 +1,18 @@
+# --- Web Scraping & Monitoring (Project 1 & 2) ---
+requests>=2.25.0
+beautifulsoup4>=4.9.0
+PyYAML>=5.4.1
+
+# --- Computer Vision & Automation (Project 3) ---
+numpy>=1.19.0
+opencv-python>=4.4.0
+scikit-image>=0.17.0
+scipy>=1.5.0
+matplotlib>=3.3.0
+
+# --- Optional / Specific APIs ---
+# Baidu OCR SDK (Used in Raid Bot)
+baidu-aip>=2.2.18
+
+# Note: 'ADBShell' and 'img_utils' are local modules included in the repo.
+# If you use a specific ADB library, list it here (e.g., pure-python-adb).
