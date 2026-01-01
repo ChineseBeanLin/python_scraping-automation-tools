@@ -1,0 +1,22 @@
+web_config:
+  url: "https://www.stwdo.de/wohnen/aktuelle-wohnangebote" 
+  # Text indicating NO rooms are available. Lowercase for safer comparison.
+  target_text: "schade - leider haben wir aktuell keine freien plätze zu vermieten! bitte schauen sie zu einem späteren zeitpunkt noch einmal hier vorbei."
+  check_interval: 300  # Check frequency in seconds (default: 5 mins)
+
+receive_emailbox_config:
+  # The email address that receives the alert
+  emailbox: "YOUR_RECEIVER_EMAIL@example.com"
+
+send_emailbox_config:
+  # SMTP server configuration (e.g., for Gmail)
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587 
+  smtp_user: "YOUR_SENDER_EMAIL@gmail.com"
+  # Use App Password if using Gmail (2FA), NOT your login password
+  smtp_password: "YOUR_APP_PASSWORD"
+
+email_config:
+  # Notification content
+  subject: "ALERT: Website Content Changed!"
+  title: "The target text has disappeared from the page. Room might be available. Check: {URL}"
